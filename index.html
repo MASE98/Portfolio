@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Marco Sánchez || Ingeniero en Sistemas</title>
+</head>
+
+<body>
+    <!-- INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1></h1> <!-- Algun titulo en la barra -->
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://github.com/MASE98" target="_blank" title="Mi GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/marco-s%C3%A1nchez-escudero-5535a81b0/" target="_blank" title="Mi LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" onclick="copiarURL()" title="Copiar URL"><i class="fa-solid fa-share"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <h2><span>Marco Sánchez</span></h2>
+                <h2>Desarrollador de Software</h2>
+                <div class="informacion-contacto-box">
+                    <ul class="informacion-contacto">
+                        <!-- Teléfono -->
+                        <li><i class="fa-solid fa-mobile-alt"></i> +34 663 119 872</li>
+                        <!-- Ubicación -->
+                        <li><i class="fa-solid fa-map-marker-alt"></i> Madrid, España</li>
+                        <!-- Correo -->
+                        <li><i class="fa-solid fa-envelope"></i> marco_sanchez98@hotmail.com</li>
+                    </ul>
+                </div>              
+                <a href="#servicios">Ir a proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/MS.jpg" alt="Marco Sánchez"  class="foto-sobremi">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Marco Sánchez</span> </h2>
+            <h3>Desarrollador de Software</h3>
+            <p>Ingeniero en Sistemas Computacionales con años de experiencia en desarrollo de sistemas. Competente en el uso de tecnologías como HTML, Javascript, Python, flask, APIs RESTful e
+                integración de modelos de inteligencia artificial, así como implementación de frameworks CSS. Destacado por mi capacidad de escribir código limpio y mantenible. 
+                Ademas, tengo conocimiento en la gestion de calidad y control de incidentes con los diversos departamentos de tecnología y seguridad.</p>
+            <p>Reconocido por mis habilidades en la resolución de problemas, trabajo en equipo y la comunicación efectiva.</p>
+            <a href="Marco_Sanchez_cv.PDF" download="Marco_Sanchez_cv.PDF">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="proyectos">
+        <h3 class="titulo-seccion">Servicios</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Diseno_software.png" alt="">
+                <div class="info">
+                    <h4>Desarrollo de Software</h4>
+                    <p>Capacidad para diseñar e implementar soluciones de software personalizadas con Python, IA y servidores, asegurando escalabilidad y eficiencia.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/diseno_web.png" alt="">
+                <div class="info">
+                    <h4>Desarrollo Web</h4>
+                    <p>Capacidad para utilizar tecnologías como HTML, CSS y JavaScript.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/gestion_servidores.jpg" alt="">
+                <div class="info">
+                    <h4>Gestion de Servidores</h4>
+                    <p>Capacidad en la gestión de servidores en entornos Windows y Linux.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Bases_de_datos.jpg" alt="">
+                <div class="info">
+                    <h4>Base de Datos</h4>
+                    <p>Habilidad en la administracion de bases de datos relacionales y no relacionales.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/IA.png" alt="">
+                <div class="info">
+                    <h4>Inteligencia Artificial</h4>
+                    <p>Conocimientos en IA, incluyendo clasificación, PLN, transformers y fine-tuning, con experiencia en soluciones innovadoras.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/gestion_calidad.jpg" alt="">
+                <div class="info">
+                    <h4>Gestion de Calidad</h4>
+                    <p>Supervisión y coordinación de procesos tecnológicos y de seguridad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Python</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="python"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>HTML</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>CSS</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="css"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Base de Datos</p>
+                <span class="porcentaje">60%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="b_d"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Análisis de datos</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ad"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Trabajo en equipo</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="te"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTAFOLIO -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>DeepASM-Explainer</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Python</li>
+                    <li>Transformers</li>
+                    <li>ASM</li>
+                    <li>REST</li>
+                </ul>
+                <p>Este proyecto utiliza modelos LLM para detectar y sugerir correcciones en código ensamblador RV32IMFD, enfocándose en errores sintácticos mediante un servicio REST.</p>
+                <div class = "redes">
+                <a href="https://github.com/MASE98/DeepASM-Explainer" target="_blank" title="Mi GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="https://github.com/MASE98/DeepASM-Explainer" target="_blank" class="btn-ver-proyecto">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-brain"></i></span>
+                <h4>Transformers DIPROMATS_2024</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Pyhton</li>
+                    <li>Transformers</li>
+                    <li>IA</li>
+                </ul>
+                <p>Este proyecto fue desarrollado para la competencia IberLEF DIPROMATS 2024, Track 1. Su objetivo principal fue la detección y caracterización de narrativas propagandísticas utilizando modelos transformers.</p>
+                <div class = "redes">
+                    <a href="https://github.com/MASE98/Transformers-DIPROMATS_2024" target="_blank" title="Mi GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="https://github.com/MASE98/Transformers-DIPROMATS_2024" target="_blank" class="btn-ver-proyecto">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-robot"></i></span>
+                <h4>Automated RPG Adventure-Planning</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>IA</li>
+                    <li>PDDL</li>
+                </ul>
+                <p>El objetivo principal es avanzar desde el nivel inicial hasta el nivel meta, superando los desafíos de cada nivel que conforma el mundo del juego.</p>
+                <div class = "redes">
+                    <a href="https://github.com/MASE98/Automated-RPG-Adventure-Planning" target="_blank" title="Mi GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="https://github.com/MASE98/Automated-RPG-Adventure-Planning" target="_blank" class="btn-ver-proyecto">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-folder-open"></i></span>
+                <h4>Portafolio</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                </ul>
+                <p>Este portafolio web, desarrollado con HTML y CSS, muestra mis habilidades y proyectos de manera profesional. Incluye una galería de proyectos con descripciones y enlaces, y un formulario de contacto funcional para recibir mensajes.</p>
+                <div class = "redes">
+                    <a href="https://github.com/MASE98/Portafolio" target="_blank" title="Mi GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="https://github.com/MASE98/Portafolio" target="_blank" class="btn-ver-proyecto">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-dice-d20 "></i></span>
+                <h4>IA - Inspiración Biológica</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Python</li>
+                    <li>IA</li>
+                </ul>
+                <p>El objetivo de este proyecto es analizar, desde una perspectiva multivariable, la optimización de rutas para camiones de alimentos en una ciudad, 
+                    utilizando el Bat Algorithm. Se consideran factores como velocidad, almacenamiento, perecederos y recursos necesarios
+                    para determinar la relación costo-beneficio del plan de viaje.</p>
+                <div class = "redes">
+                    <a href="https://github.com/MASE98/BatAlgo-CityFoodTrucks" target="_blank" title="Mi GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="https://github.com/MASE98/BatAlgo-CityFoodTrucks" target="_blank" class="btn-ver-proyecto">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-thermometer-half"></i></span>
+                <h4>Temperatured Warrior</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>C#</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <p>Este proyecto utiliza Meadow para la detección de temperaturas en ambientes fríos y cálidos, simulando sistemas complejos y permitiendo el análisis preciso de variaciones térmicas en tiempo real.</p>
+                <div class = "redes">
+                    <a href="https://github.com/MASE98/Temp-Warrior" target="_blank" title="Mi GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                <a href="https://github.com/MASE98/Temp-Warrior" target="_blank" class="btn-ver-proyecto">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctame</h3>
+        <div class="contenedor-form">
+            <form id="contact-form">
+                <div class="fila mitad">
+                    <input type="text" name="from_name" placeholder="Nombre Completo *" class="input-mitad" required>
+                    <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad" required>
+                </div>
+                <div class="fila">
+                    <input type="text" name="subject" placeholder="Asunto..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..." class="input-full" required></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>© 2024 All Rights Reserved by Marco Sánchez E.</p>
+        <div class="redes">
+            <a href="https://github.com/MASE98" target="_blank" title="Mi GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/marco-s%C3%A1nchez-escudero-5535a81b0/" target="_blank" title="Mi LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Script para inicializar EmailJS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "Y_v9u0bSPewszK3OC", // Reemplaza con tu clave pública
+    });
+    })();
+    </script>
+
+</body>
+
+</html>
