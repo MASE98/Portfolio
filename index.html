@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="estilo.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Marco Sánchez || Ingeniero en Sistemas</title>
 </head>
 
@@ -31,9 +32,10 @@
                 emailjs.sendForm("service_czct4bn","template_prueba", this)
                     .then(() => {
                         console.log('SUCCESS!');
-                        alert('Mensaje Enviado con exito');
+                        Swal.fire("Correo enviado con éxito!");
                     }, (error) => {
                         console.log('FAILED...', error);
+                        Swal.fire("Hubo un error al enviar el correo:"  + error.text);
                     });
             });
         }
