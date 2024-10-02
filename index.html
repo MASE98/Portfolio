@@ -28,9 +28,10 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
+                emailjs.sendForm("service_czct4bn","template_prueba", this)
                     .then(() => {
                         console.log('SUCCESS!');
+                        alert('Mensaje Enviado con exito');
                     }, (error) => {
                         console.log('FAILED...', error);
                     });
