@@ -50,9 +50,9 @@ window.onscroll = function(){
 } 
 
 // Añadir evento de submit al formulario
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que el formulario recargue la página
+//document.getElementById('contact-form').addEventListener('submit', function(event) {
+  //  event.preventDefault(); // Evita que el formulario recargue la página
     
-    // Llamada para enviar los datos usando EmailJS
-    emailjs.send("service_czct4bn","template_prueba");
-  });
+// Llamada para enviar los datos usando EmailJS
+//emailjs.send("service_czct4bn","template_prueba");
+//});
